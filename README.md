@@ -1,41 +1,19 @@
-**Dynamisk web**
-# Introduktion til url-parametre
+# Aflevering
 
-Du skal lave en "mikro-air-bnb-klon" med otte destinationer i en listevisning, samt en detaljevisning om hver destination(genereret automatisk).
+Jeg har lavet 2 versioner af siden, som begge er hosted hos vercel.
 
-### **Mål**
-Målet med opgaven er at træne listevisning og detaljevisning ved brug af url-parametre(query-strings).
+Jeg har lavet min egen API til opgaven som køre via Next.js versionen og bliver brugt af begge versioner.
 
-### **Materialer**
-- en figma fil, som indeholder et layout til liste-visning samt et layout til detaljevisning.
-- følgende datafiler:
-    - `destiations.json`, som indeholder alle 8 desitinationer
-    - 8 separate json filer (`1.json`, `2.json`, `3.json`...), som hver indeholder én destination og som er navngivet med destinationens id. Vi bruger denne måde for at simulere et api.
-- billedfiler til alle 8 destinationer i mappen `img`. 
+## Vanilla
 
-### **Opgaven**
+Vanilla versionen er fuldkommen færdig, der er dog mindre ting der godt kunne forbedres, såsom lazy loading delen.
 
-I listevisningen fetches alle 8 destinationer i `destiations.json`. Ved at klikke på en af de 8 destinationer, skal brugeren vises en ny side (fx. `destination.html`), som viser mere uddybende detaljer om den enkelte destination. Ved hjælp af et url-parameter skal du videresende til `destination.html` hvilken en af destinationerne brugeren har klikket på. Url'en på denne side ser måske sådan ud: 
-```
-http://127.0.0.1:5500/destination.html?id=5
-```
+- [Repository](https://github.com/Saku75/airbnb-vanilla)
+- [Website](https://airbnb-vanilla.lvmann.dk/)
 
-Du skal nu "fiske" id'et ud af url'en og fetche den json-fil som kun indeholder data om den pågældende destination. 
+## Next.js
 
-### **Processen** 
-- Husk at lave en branch til din aflevering.
-- Commit ofte
-- Tænk over, hvad du skriver i dine commit-beskeder.
+Next.js versionen er ikke helt færdig på nuværende tidspunkt. Frontend delen mangler en del arbejde men APIen er helt færdig.
 
-### **Ekstraopgave** - hvis du er hurtigt færdig
-Få funktionaliteten med at markere en favorit til at virke. Hvis du markerer en destination som favorit, skal hjertet være rødt (eller en anden farve efter dit valg) på _både_ listevisning _og_ detaljevisning. Du skal måske undersøge lidt på forhånd om LocalStorage eller cookies.
-
-### **Aflevering**: 
-Du afleverer ved at lave et **pull-request** hvor du sætter din lærer på som *reviewer*.
-
-### **Feedback**: 
-Din lærer kigger dit pull-request igennem, og hvis du blot får et godkendt/approved tilbage betyder det, at du har løst opgaven lige som det var forventet. 
-
-Hvis din lærer sender et godkendt/approved tilbage, men også tilknytter en kommentar, er det måske for at gøre opmærksom på en detalje du let kan forbedre. Du behøver ikke at lave en ny pull request.
-
-Hvis du får en anmodning tilbage fra din lærer om at udføre ændringer, skal du implementere ændringerne/løse problemet og lave en ny pull-request. 
+- [Repository](https://github.com/Saku75/airbnb-next)
+- [Website](https://airbnb-next.lvmann.dk/)
